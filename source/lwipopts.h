@@ -51,7 +51,7 @@
 /**
  * LWIP_NETCONN==0: Disable Netconn API (require to use api_lib.c)
  */
-#define LWIP_NETCONN            0
+#define LWIP_NETCONN            1
 /**
  * LWIP_SOCKET==0: Disable Socket API (require to use sockets.c)
  */
