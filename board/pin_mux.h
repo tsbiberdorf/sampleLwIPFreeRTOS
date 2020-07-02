@@ -25,13 +25,243 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
+/*! @name PORTE0 (number 1), WINC_CHIPEN
+  @{ */
+#define BOARD_WINC_CHIPEN_GPIO GPIOE /*!<@brief GPIO device name: GPIOE */
+#define BOARD_WINC_CHIPEN_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_CHIPEN_PIN 0U     /*!<@brief PORTE pin index: 0 */
+                                     /* @} */
+
+/*! @name PORTE1 (number 2), WINC_MOSI
+  @{ */
+#define BOARD_WINC_MOSI_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_MOSI_PIN 1U     /*!<@brief PORTE pin index: 1 */
+                                   /* @} */
+
+/*! @name PORTE2 (number 3), WINC_SCK
+  @{ */
+#define BOARD_WINC_SCK_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_SCK_PIN 2U     /*!<@brief PORTE pin index: 2 */
+                                  /* @} */
+
+/*! @name PORTE3 (number 4), WINC_MISO
+  @{ */
+#define BOARD_WINC_MISO_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_MISO_PIN 3U     /*!<@brief PORTE pin index: 3 */
+                                   /* @} */
+
+/*! @name PORTE4 (number 5), WINC_CS
+  @{ */
+#define BOARD_WINC_CS_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_CS_PIN 4U     /*!<@brief PORTE pin index: 4 */
+                                 /* @} */
+
+/*! @name PORTE5 (number 6), WINC_RESET
+  @{ */
+#define BOARD_WINC_RESET_GPIO GPIOE /*!<@brief GPIO device name: GPIOE */
+#define BOARD_WINC_RESET_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_RESET_PIN 5U     /*!<@brief PORTE pin index: 5 */
+                                    /* @} */
+
+/*! @name PORTE6 (number 7), WINC_IRQ
+  @{ */
+#define BOARD_WINC_IRQ_GPIO GPIOE /*!<@brief GPIO device name: GPIOE */
+#define BOARD_WINC_IRQ_PORT PORTE /*!<@brief PORT device name: PORTE */
+#define BOARD_WINC_IRQ_PIN 6U     /*!<@brief PORTE pin index: 6 */
+                                  /* @} */
+
+/*! @name ADC0_DP1 (number 14), SENSOR_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC0_DM1 (number 15), WIFI_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC1_DP1 (number 16), POWER_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC0_DM0 (number 19), TRIPPED_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC0_DP3 (number 20), NGR_FLT_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC0_DM3 (number 21), GND_FLT_ANODE
+  @{ */
+/* @} */
+
+/*! @name ADC1_SE18 (number 26), ADC_24V
+  @{ */
+/* @} */
+
+/*! @name ADC0_SE23 (number 27), ADC_3V3
+  @{ */
+/* @} */
+
+/*! @name PORTB20 (number 66), EXTF_CS
+  @{ */
+#define BOARD_EXTF_CS_PORT PORTB /*!<@brief PORT device name: PORTB */
+#define BOARD_EXTF_CS_PIN 20U    /*!<@brief PORTB pin index: 20 */
+                                 /* @} */
+
+/*! @name PORTB21 (number 67), EXTF_SCK
+  @{ */
+#define BOARD_EXTF_SCK_PORT PORTB /*!<@brief PORT device name: PORTB */
+#define BOARD_EXTF_SCK_PIN 21U    /*!<@brief PORTB pin index: 21 */
+                                  /* @} */
+
+/*! @name PORTB22 (number 68), EXTF_MOSI
+  @{ */
+#define BOARD_EXTF_MOSI_PORT PORTB /*!<@brief PORT device name: PORTB */
+#define BOARD_EXTF_MOSI_PIN 22U    /*!<@brief PORTB pin index: 22 */
+                                   /* @} */
+
+/*! @name PORTB23 (number 69), EXTF_MISO
+  @{ */
+#define BOARD_EXTF_MISO_PORT PORTB /*!<@brief PORT device name: PORTB */
+#define BOARD_EXTF_MISO_PIN 23U    /*!<@brief PORTB pin index: 23 */
+                                   /* @} */
+
+/*! @name PORTC0 (number 70), RELAY_TRIP
+  @{ */
+#define BOARD_RELAY_TRIP_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_RELAY_TRIP_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_RELAY_TRIP_PIN 0U     /*!<@brief PORTC pin index: 0 */
+                                    /* @} */
+
+/*! @name PORTC1 (number 71), RELAY_NGR
+  @{ */
+#define BOARD_RELAY_NGR_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_RELAY_NGR_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_RELAY_NGR_PIN 1U     /*!<@brief PORTC pin index: 1 */
+                                   /* @} */
+
+/*! @name PORTC2 (number 72), RELAY_AUX
+  @{ */
+#define BOARD_RELAY_AUX_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_RELAY_AUX_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_RELAY_AUX_PIN 2U     /*!<@brief PORTC pin index: 2 */
+                                   /* @} */
+
+/*! @name PORTC4 (number 76), RELAY_GND
+  @{ */
+#define BOARD_RELAY_GND_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_RELAY_GND_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_RELAY_GND_PIN 4U     /*!<@brief PORTC pin index: 4 */
+                                   /* @} */
+
+/*! @name PORTC8 (number 80), WIFI_ENABLE
+  @{ */
+#define BOARD_WIFI_ENABLE_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_WIFI_ENABLE_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_WIFI_ENABLE_PIN 8U     /*!<@brief PORTC pin index: 8 */
+                                     /* @} */
+
+/*! @name PORTC9 (number 81), TEST_P
+  @{ */
+#define BOARD_TEST_P_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_TEST_P_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_TEST_P_PIN 9U     /*!<@brief PORTC pin index: 9 */
+                                /* @} */
+
+/*! @name PORTC10 (number 82), RESET_P
+  @{ */
+#define BOARD_RESET_P_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_RESET_P_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_RESET_P_PIN 10U    /*!<@brief PORTC pin index: 10 */
+                                 /* @} */
+
+/*! @name PORTC16 (number 90), HMI_RS485_RX
+  @{ */
+#define BOARD_HMI_RS485_RX_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_HMI_RS485_RX_PIN 16U    /*!<@brief PORTC pin index: 16 */
+                                      /* @} */
+
+/*! @name PORTC17 (number 91), HMI_RS485_TX
+  @{ */
+#define BOARD_HMI_RS485_TX_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_HMI_RS485_TX_PIN 17U    /*!<@brief PORTC pin index: 17 */
+                                      /* @} */
+
+/*! @name PORTC18 (number 92), HMI_RS485_DIR
+  @{ */
+#define BOARD_HMI_RS485_DIR_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_HMI_RS485_DIR_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_HMI_RS485_DIR_PIN 18U    /*!<@brief PORTC pin index: 18 */
+                                       /* @} */
+
+/*! @name PORTD2 (number 95), SENSOR_RS485_RX
+  @{ */
+#define BOARD_SENSOR_RS485_RX_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_SENSOR_RS485_RX_PIN 2U     /*!<@brief PORTD pin index: 2 */
+                                         /* @} */
+
+/*! @name PORTD3 (number 96), SENSOR_RS485_TX
+  @{ */
+#define BOARD_SENSOR_RS485_TX_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_SENSOR_RS485_TX_PIN 3U     /*!<@brief PORTD pin index: 3 */
+                                         /* @} */
+
+/*! @name PORTD0 (number 93), SENSOR_RS485_DIR
+  @{ */
+#define BOARD_SENSOR_RS485_DIR_GPIO GPIOD /*!<@brief GPIO device name: GPIOD */
+#define BOARD_SENSOR_RS485_DIR_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_SENSOR_RS485_DIR_PIN 0U     /*!<@brief PORTD pin index: 0 */
+                                          /* @} */
+
+/*! @name PORTD4 (number 97), POWER_LED
+  @{ */
+#define BOARD_POWER_LED_GPIO GPIOD /*!<@brief GPIO device name: GPIOD */
+#define BOARD_POWER_LED_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_POWER_LED_PIN 4U     /*!<@brief PORTD pin index: 4 */
+                                   /* @} */
+
+/*! @name PORTD5 (number 98), WIFI_LED
+  @{ */
+#define BOARD_WIFI_LED_GPIO GPIOD /*!<@brief GPIO device name: GPIOD */
+#define BOARD_WIFI_LED_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_WIFI_LED_PIN 5U     /*!<@brief PORTD pin index: 5 */
+                                  /* @} */
+
+/*! @name PORTD6 (number 99), SENSOR_LED
+  @{ */
+#define BOARD_SENSOR_LED_GPIO GPIOD /*!<@brief GPIO device name: GPIOD */
+#define BOARD_SENSOR_LED_PORT PORTD /*!<@brief PORT device name: PORTD */
+#define BOARD_SENSOR_LED_PIN 6U     /*!<@brief PORTD pin index: 6 */
+                                    /* @} */
+
+/*! @name PORTC6 (number 78), NGR_FLT_LED
+  @{ */
+#define BOARD_NGR_FLT_LED_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_NGR_FLT_LED_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_NGR_FLT_LED_PIN 6U     /*!<@brief PORTC pin index: 6 */
+                                     /* @} */
+
+/*! @name PORTC7 (number 79), GND_FLT_LED
+  @{ */
+#define BOARD_GND_FLT_LED_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_GND_FLT_LED_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_GND_FLT_LED_PIN 7U     /*!<@brief PORTC pin index: 7 */
+                                     /* @} */
+
+/*! @name PORTC5 (number 77), TRIPPED_LED
+  @{ */
+#define BOARD_TRIPPED_LED_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
+#define BOARD_TRIPPED_LED_PORT PORTC /*!<@brief PORT device name: PORTC */
+#define BOARD_TRIPPED_LED_PIN 5U     /*!<@brief PORTC pin index: 5 */
+                                     /* @} */
+
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
 void BOARD_InitPins(void);
 
-/*! @name PORTC6 (number 78), U8[11]/SW2
+/*! @name PORTC6 (number 78), NGR_FLT_LED
   @{ */
 #define BOARD_SW2_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
 #define BOARD_SW2_PORT PORTC /*!<@brief PORT device name: PORTC */
@@ -51,14 +281,14 @@ void BOARD_InitPins(void);
  */
 void BOARD_InitButtonsPins(void);
 
-/*! @name PORTB21 (number 67), D12[3]/LEDRGB_BLUE
+/*! @name PORTB21 (number 67), EXTF_SCK
   @{ */
 #define BOARD_LED_BLUE_GPIO GPIOB /*!<@brief GPIO device name: GPIOB */
 #define BOARD_LED_BLUE_PORT PORTB /*!<@brief PORT device name: PORTB */
 #define BOARD_LED_BLUE_PIN 21U    /*!<@brief PORTB pin index: 21 */
                                   /* @} */
 
-/*! @name PORTB22 (number 68), D12[1]/LEDRGB_RED
+/*! @name PORTB22 (number 68), EXTF_MOSI
   @{ */
 #define BOARD_LED_RED_GPIO GPIOB /*!<@brief GPIO device name: GPIOB */
 #define BOARD_LED_RED_PORT PORTB /*!<@brief PORT device name: PORTB */
@@ -130,7 +360,7 @@ void BOARD_InitOSCPins(void);
 #define BOARD_ACCEL_SCL_PIN 24U    /*!<@brief PORTE pin index: 24 */
                                    /* @} */
 
-/*! @name PORTC6 (number 78), U8[11]/SW2
+/*! @name PORTC6 (number 78), NGR_FLT_LED
   @{ */
 #define BOARD_ACCEL_INT1_GPIO GPIOC /*!<@brief GPIO device name: GPIOC */
 #define BOARD_ACCEL_INT1_PORT PORTC /*!<@brief PORT device name: PORTC */
@@ -218,43 +448,43 @@ void BOARD_InitACCELPins(void);
  */
 void BOARD_InitENETPins(void);
 
-/*! @name PORTE0 (number 1), J15[P8]/SDHC0_D1
+/*! @name PORTE0 (number 1), WINC_CHIPEN
   @{ */
 #define BOARD_SDHC0_D1_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_D1_PIN 0U     /*!<@brief PORTE pin index: 0 */
                                   /* @} */
 
-/*! @name PORTE1 (number 2), J15[P7]/SDHC0_D0
+/*! @name PORTE1 (number 2), WINC_MOSI
   @{ */
 #define BOARD_SDHC0_D0_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_D0_PIN 1U     /*!<@brief PORTE pin index: 1 */
                                   /* @} */
 
-/*! @name PORTE2 (number 3), J15[P5]/SDHC0_DCLK
+/*! @name PORTE2 (number 3), WINC_SCK
   @{ */
 #define BOARD_SDHC0_DCLK_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_DCLK_PIN 2U     /*!<@brief PORTE pin index: 2 */
                                     /* @} */
 
-/*! @name PORTE3 (number 4), J15[P3]/SDHC0_CMD
+/*! @name PORTE3 (number 4), WINC_MISO
   @{ */
 #define BOARD_SDHC0_CMD_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_CMD_PIN 3U     /*!<@brief PORTE pin index: 3 */
                                    /* @} */
 
-/*! @name PORTE4 (number 5), J15[P2]/SDHC0_D3
+/*! @name PORTE4 (number 5), WINC_CS
   @{ */
 #define BOARD_SDHC0_D3_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_D3_PIN 4U     /*!<@brief PORTE pin index: 4 */
                                   /* @} */
 
-/*! @name PORTE5 (number 6), J15[P1]/SDHC0_D2
+/*! @name PORTE5 (number 6), WINC_RESET
   @{ */
 #define BOARD_SDHC0_D2_PORT PORTE /*!<@brief PORT device name: PORTE */
 #define BOARD_SDHC0_D2_PIN 5U     /*!<@brief PORTE pin index: 5 */
                                   /* @} */
 
-/*! @name PORTE6 (number 7), J15[G1]/SD_CARD_DETECT
+/*! @name PORTE6 (number 7), WINC_IRQ
   @{ */
 #define BOARD_SDHC_CD_GPIO GPIOE /*!<@brief GPIO device name: GPIOE */
 #define BOARD_SDHC_CD_PORT PORTE /*!<@brief PORT device name: PORTE */

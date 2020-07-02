@@ -29,7 +29,7 @@
  */
  
 /**
- * @file    sampleLwIPFreeRTOS.c
+ * @file    NGRMRelay.c
  * @brief   Application entry point.
  */
 #include <stdio.h>
@@ -39,9 +39,26 @@
 #include "clock_config.h"
 #include "MK64F12.h"
 #include "fsl_debug_console.h"
+/* FreeRTOS kernel includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+
 /* TODO: insert other include files here. */
 
 /* TODO: insert other definitions and declarations here. */
+extern void CliInit();
+extern void StartDebugTask();
+extern void StartLedTask();
+extern void StartGpioTask();
+extern void StartRS485SensorTask();
+extern void StartRS485HMITask();
+extern void initIpAddrTasks();
+extern int  MemMapInit();
+extern void initExternalFlashThread();
+extern void rtcInitialize();
+
 
 /*
  * @brief   Application entry point.
@@ -49,22 +66,28 @@
 int main(void) {
 
   	/* Init board hardware. */
+    SYSMPU_Type *base = SYSMPU;
     BOARD_InitBootPins();
     BOARD_InitBootClocks();
     BOARD_InitBootPeripherals();
   	/* Init FSL debug console. */
     BOARD_InitDebugConsole();
+    /* Disable SYSMPU. */
+    base->CESR &= ~SYSMPU_CESR_VLD_MASK;
+
+    rtcInitialize();
+    MemMapInit();
+    StartDebugTask();
+    CliInit();
+    StartLedTask();
+    StartGpioTask();
+    StartRS485SensorTask();
+    StartRS485HMITask();
+    initIpAddrTasks();
+    //initExternalFlashThread();
 
     PRINTF("Hello World\n");
+    vTaskStartScheduler();
 
-    /* Force the counter to be placed into memory. */
-    volatile static int i = 0 ;
-    /* Enter an infinite loop, just incrementing a counter. */
-    while(1) {
-        i++ ;
-        /* 'Dummy' NOP to allow source level single stepping of
-            tight while() loop */
-        __asm volatile ("nop");
-    }
     return 0 ;
 }
