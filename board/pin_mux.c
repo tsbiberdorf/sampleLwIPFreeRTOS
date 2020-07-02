@@ -14,63 +14,63 @@ mcu_data: ksdk2_0
 processor_version: 7.0.1
 board: FRDM-K64F
 pin_labels:
-- {pin_num: '90', pin_signal: PTC16/UART3_RX/ENET0_1588_TMR0/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b, label: 'J1[2]', identifier: TMR_1588_0}
-- {pin_num: '91', pin_signal: PTC17/UART3_TX/ENET0_1588_TMR1/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b, label: 'J1[4]', identifier: TMR_1588_1}
+- {pin_num: '90', pin_signal: PTC16/UART3_RX/ENET0_1588_TMR0/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b, label: HMI_RS485_RX, identifier: TMR_1588_0;SENS;SENSOR_RS485_RX;HMI_RS485_RX}
+- {pin_num: '91', pin_signal: PTC17/UART3_TX/ENET0_1588_TMR1/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b, label: HMI_RS485_TX, identifier: TMR_1588_1;SENSOR_RS485_TX;HMI_RS485_TX}
 - {pin_num: '57', pin_signal: PTB9/SPI1_PCS1/UART3_CTS_b/FB_AD20, label: 'J1[6]'}
 - {pin_num: '35', pin_signal: PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI, label: 'J1[8]'}
-- {pin_num: '69', pin_signal: PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28, label: 'J1[10]'}
+- {pin_num: '69', pin_signal: PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28, label: EXTF_MISO, identifier: EXTF_MISO}
 - {pin_num: '36', pin_signal: PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO, label: 'J1[12]/J9[6]/TRACE_SWO'}
-- {pin_num: '72', pin_signal: ADC0_SE4b/CMP1_IN0/PTC2/SPI0_PCS2/UART1_CTS_b/FTM0_CH1/FB_AD12/I2S0_TX_FS, label: 'J1[14]'}
+- {pin_num: '72', pin_signal: ADC0_SE4b/CMP1_IN0/PTC2/SPI0_PCS2/UART1_CTS_b/FTM0_CH1/FB_AD12/I2S0_TX_FS, label: RELAY_AUX, identifier: RELAY_AUX}
 - {pin_num: '73', pin_signal: CMP1_IN1/PTC3/LLWU_P7/SPI0_PCS1/UART1_RX/FTM0_CH2/CLKOUT/I2S0_TX_BCLK, label: 'J1[16]'}
 - {pin_num: '64', pin_signal: PTB18/CAN0_TX/FTM2_CH0/I2S0_TX_BCLK/FB_AD15/FTM2_QD_PHA, label: 'J1[1]'}
 - {pin_num: '65', pin_signal: PTB19/CAN0_RX/FTM2_CH1/I2S0_TX_FS/FB_OE_b/FTM2_QD_PHB, label: 'J1[3]'}
-- {pin_num: '71', pin_signal: ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0, label: 'J1[5]'}
-- {pin_num: '80', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7, label: 'J1[7]'}
-- {pin_num: '81', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, label: 'J1[9]'}
-- {pin_num: '77', pin_signal: PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT/FTM0_CH2, label: 'J1[15]'}
-- {pin_num: '79', pin_signal: CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8, label: 'J1[13]', identifier: CMP0_IN1}
-- {pin_num: '70', pin_signal: ADC0_SE14/PTC0/SPI0_PCS4/PDB0_EXTRG/USB_SOF_OUT/FB_AD14/I2S0_TXD1, label: 'J1[11]'}
+- {pin_num: '71', pin_signal: ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0, label: RELAY_NGR, identifier: RELAY_NGR}
+- {pin_num: '80', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7, label: WIFI_ENABLE, identifier: WIFI_ENABLE}
+- {pin_num: '81', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, label: TEST_P, identifier: TEST_P}
+- {pin_num: '77', pin_signal: PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT/FTM0_CH2, label: TRIPPED_LED, identifier: TRIPPED_LED}
+- {pin_num: '79', pin_signal: CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8, label: GND_FLT_LED, identifier: CMP0_IN1;GND_FLT_LED}
+- {pin_num: '70', pin_signal: ADC0_SE14/PTC0/SPI0_PCS4/PDB0_EXTRG/USB_SOF_OUT/FB_AD14/I2S0_TXD1, label: RELAY_TRIP, identifier: RELAY_TRIP}
 - {pin_num: '84', pin_signal: PTC12/UART4_RTS_b/FB_AD27/FTM3_FLT0, label: 'J2[2]'}
-- {pin_num: '76', pin_signal: PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT, label: 'J2[4]'}
-- {pin_num: '93', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b, label: 'J2[6]'}
-- {pin_num: '95', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL, label: 'J2[8]', identifier: UART2_RX}
-- {pin_num: '96', pin_signal: PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA, label: 'J2[10]', identifier: UART2_TX}
+- {pin_num: '76', pin_signal: PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT, label: RELAY_GND, identifier: RELAY_GND}
+- {pin_num: '93', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b, label: SENSOR_RS485_DIR, identifier: SENSOR_RS485_DIR}
+- {pin_num: '95', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL, label: SENSOR_RS485_RX, identifier: UART2_RX;SENSOR_RS485_DIR;HMI_RS485_DIR;SENSOR_RS485_RX}
+- {pin_num: '96', pin_signal: PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA, label: SENSOR_RS485_TX, identifier: UART2_TX;SENSOR_RS485_TX}
 - {pin_num: '94', pin_signal: ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FTM3_CH1/FB_CS0_b, label: 'J2[12]'}
 - {pin_num: '32', pin_signal: ADC0_SE18/PTE25/UART4_RX/I2C0_SDA/EWM_IN, label: 'J2[18]/U8[6]/I2C0_SDA', identifier: ACCEL_SDA}
 - {pin_num: '31', pin_signal: ADC0_SE17/PTE24/UART4_TX/I2C0_SCL/EWM_OUT_b, label: 'J2[20]/U8[4]/I2C0_SCL', identifier: ACCEL_SCL}
-- {pin_num: '26', pin_signal: VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18, label: 'J2[17]'}
-- {pin_num: '21', pin_signal: ADC1_DM0/ADC0_DM3, label: 'J2[13]'}
+- {pin_num: '26', pin_signal: VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18, label: ADC_24V, identifier: ADC_24V}
+- {pin_num: '21', pin_signal: ADC1_DM0/ADC0_DM3, label: GND_FLT_ANODE, identifier: _ANODE;GND_FLT_ANODE}
 - {pin_num: '18', pin_signal: ADC0_DP0/ADC1_DP3, label: 'J2[5]'}
-- {pin_num: '19', pin_signal: ADC0_DM0/ADC1_DM3, label: 'J2[7]'}
-- {pin_num: '20', pin_signal: ADC1_DP0/ADC0_DP3, label: 'J2[11]'}
+- {pin_num: '19', pin_signal: ADC0_DM0/ADC1_DM3, label: TRIPPED_ANODE, identifier: _ANODE;TRIPPED_ANODE}
+- {pin_num: '20', pin_signal: ADC1_DP0/ADC0_DP3, label: NGR_FLT_ANODE, identifier: _ANODE;NGR_FLT_ANODE}
 - {pin_num: '33', pin_signal: PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN, label: 'J2[1]/D12[4]/LEDRGB_GREEN', identifier: LED_GREEN}
-- {pin_num: '27', pin_signal: DAC0_OUT/CMP1_IN3/ADC0_SE23, label: 'J4[11]', identifier: DAC0_OUT}
-- {pin_num: '66', pin_signal: PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT, label: 'J6[3]/J4[9]/RF_WIFI_CE', identifier: RF_WIFI_CE}
+- {pin_num: '27', pin_signal: DAC0_OUT/CMP1_IN3/ADC0_SE23, label: ADC_3V3, identifier: DAC0_OUT;ADC_3V3}
+- {pin_num: '66', pin_signal: PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT, label: EXTF_CS, identifier: RF_WIFI_CE;EXTF_CS}
 - {pin_num: '17', pin_signal: ADC1_DM1, label: 'J4[7]'}
-- {pin_num: '16', pin_signal: ADC1_DP1, label: 'J4[5]'}
-- {pin_num: '15', pin_signal: ADC0_DM1, label: 'J4[3]'}
-- {pin_num: '14', pin_signal: ADC0_DP1, label: 'J4[1]'}
+- {pin_num: '16', pin_signal: ADC1_DP1, label: POWER_ANODE, identifier: _ANODE;POWER_ANODE}
+- {pin_num: '15', pin_signal: ADC0_DM1, label: WIFI_ANODE, identifier: WIFI_ANODE}
+- {pin_num: '14', pin_signal: ADC0_DP1, label: SENSOR_ANODE, identifier: SENSOR_ANODE}
 - {pin_num: '55', pin_signal: ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3, label: 'J4[2]', identifier: ADC0_SE12}
 - {pin_num: '56', pin_signal: ADC0_SE13/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/ENET0_1588_TMR1/FTM0_FLT0, label: 'J4[4]'}
 - {pin_num: '58', pin_signal: ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1, label: 'J4[6]'}
 - {pin_num: '59', pin_signal: ADC1_SE15/PTB11/SPI1_SCK/UART3_TX/FB_AD18/FTM0_FLT2, label: 'J4[8]'}
 - {pin_num: '83', pin_signal: ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/FTM3_CH7/I2S0_RXD1/FB_RW_b, label: 'J4[10]'}
-- {pin_num: '82', pin_signal: ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5, label: 'J4[12]'}
+- {pin_num: '82', pin_signal: ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5, label: RESET_P, identifier: RESET_P}
 - {pin_num: '38', pin_signal: PTA4/LLWU_P3/FTM0_CH1/NMI_b/EZP_CS_b, label: SW3, identifier: SW3}
-- {pin_num: '78', pin_signal: CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK, label: 'U8[11]/SW2', identifier: SW2;ACCEL_INT1}
+- {pin_num: '78', pin_signal: CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK, label: NGR_FLT_LED, identifier: SW2;ACCEL_INT1;NGR_FLT;NGR_FLT_LED}
 - {pin_num: '52', pin_signal: RESET_b, label: 'J3[6]/J9[10]/D1/RESET', identifier: RESET}
-- {pin_num: '6', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0, label: 'J15[P1]/SDHC0_D2', identifier: SDHC0_D2}
-- {pin_num: '5', pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0, label: 'J15[P2]/SDHC0_D3', identifier: SDHC0_D3}
-- {pin_num: '4', pin_signal: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT, label: 'J15[P3]/SDHC0_CMD', identifier: SDHC0_CMD}
-- {pin_num: '3', pin_signal: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2, label: 'J15[P5]/SDHC0_DCLK', identifier: SDHC0_DCLK}
-- {pin_num: '2', pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN, label: 'J15[P7]/SDHC0_D0', identifier: SDHC0_D0}
-- {pin_num: '1', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT, label: 'J15[P8]/SDHC0_D1', identifier: SDHC0_D1}
-- {pin_num: '7', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT, label: 'J15[G1]/SD_CARD_DETECT', identifier: SDHC_CD}
-- {pin_num: '98', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK, label: 'J6[5]/RF_WIFI_SCK', identifier: WIFI_SCK}
+- {pin_num: '6', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0, label: WINC_RESET, identifier: SDHC0_D2;WINC_RESET}
+- {pin_num: '5', pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0, label: WINC_CS, identifier: SDHC0_D3;WINC_CS}
+- {pin_num: '4', pin_signal: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT, label: WINC_MISO, identifier: SDHC0_CMD;WINC_MISO}
+- {pin_num: '3', pin_signal: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2, label: WINC_SCK, identifier: SDHC0_DCLK;WINC_SCK}
+- {pin_num: '2', pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN, label: WINC_MOSI, identifier: SDHC0_D0;WINC_MOSI}
+- {pin_num: '1', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT, label: WINC_CHIPEN, identifier: SDHC0_D1;WINC_CHIPEN}
+- {pin_num: '7', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT, label: WINC_IRQ, identifier: SDHC_CD;WINC_IRQ}
+- {pin_num: '98', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK, label: WIFI_LED, identifier: WIFI_SCK;WIFI_LED}
 - {pin_num: '100', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN, label: 'J6[7]/RF_WIFI_MISO', identifier: WIFI_MISO}
-- {pin_num: '97', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN/SPI1_PCS0, label: 'J6[4]/RF_WIFI_CS', identifier: WIFI_CS}
-- {pin_num: '99', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT, label: 'J6[6]/RF_WIFI_MOSI', identifier: WIFI_MOSI}
-- {pin_num: '92', pin_signal: PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_BLS23_16_b, label: 'J6[8]/RF_WIFI_IRQ', identifier: WIFI_IRQ;TMR_1588_2}
+- {pin_num: '97', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN/SPI1_PCS0, label: POWER_LED, identifier: WIFI_CS;POWER_LED}
+- {pin_num: '99', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT, label: SENSOR_LED, identifier: WIFI_MOSI;SENSOR_LED}
+- {pin_num: '92', pin_signal: PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_BLS23_16_b, label: HMI_RS485_DIR, identifier: WIFI_IRQ;TMR_1588_2;HMI_RS485_DIR}
 - {pin_num: '86', pin_signal: PTC14/UART4_RX/FB_AD25, label: 'J199[3]/BT_TX'}
 - {pin_num: '87', pin_signal: PTC15/UART4_TX/FB_AD24, label: 'J199[4]/BT_RX'}
 - {pin_num: '54', pin_signal: ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/RMII0_MDC/MII0_MDC/FTM1_QD_PHB, label: 'U13[11]/RMII0_MDC', identifier: RMII0_MDC}
@@ -85,8 +85,8 @@ pin_labels:
 - {pin_num: '63', pin_signal: PTB17/SPI1_SIN/UART0_TX/FTM_CLKIN1/FB_AD16/EWM_OUT_b, label: 'U10[1]/UART0_TX', identifier: DEBUG_UART_TX}
 - {pin_num: '37', pin_signal: PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO, label: 'J9[2]/SWD_DIO'}
 - {pin_num: '34', pin_signal: PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK, label: 'J9[4]/SWD_CLK'}
-- {pin_num: '68', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, label: 'D12[1]/LEDRGB_RED', identifier: LED_RED}
-- {pin_num: '67', pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, label: 'D12[3]/LEDRGB_BLUE', identifier: LED_BLUE}
+- {pin_num: '68', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, label: EXTF_MOSI, identifier: LED_RED;EXTF_MOSI}
+- {pin_num: '67', pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, label: EXTF_SCK, identifier: LED_BLUE;EXTF_SCK}
 - {pin_num: '13', pin_signal: VREGIN, label: VREGIN_K64}
 - {pin_num: '29', pin_signal: EXTAL32, label: 'Y3[2]/EXTAL32_RTC', identifier: ETAL32K}
 - {pin_num: '28', pin_signal: XTAL32, label: 'Y3[1]/XTAL32_RTC', identifier: XTAL32K}
@@ -141,7 +141,67 @@ void BOARD_InitBootPins(void)
 BOARD_InitPins:
 - options: {callFromInitBoot: 'true', prefix: BOARD_, coreID: core0, enableClock: 'true'}
 - pin_list:
-  - {pin_num: '36', peripheral: TPIU, signal: SWO, pin_signal: PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO, drive_strength: low, pull_select: down, pull_enable: disable}
+  - {pin_num: '1', peripheral: GPIOE, signal: 'GPIO, 0', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT, identifier: WINC_CHIPEN,
+    direction: OUTPUT, pull_enable: enable}
+  - {pin_num: '2', peripheral: SPI1, signal: SOUT, pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN, identifier: WINC_MOSI}
+  - {pin_num: '3', peripheral: SPI1, signal: SCK, pin_signal: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2, identifier: WINC_SCK}
+  - {pin_num: '4', peripheral: SPI1, signal: SIN, pin_signal: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT, identifier: WINC_MISO}
+  - {pin_num: '5', peripheral: SPI1, signal: PCS0_SS, pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0, identifier: WINC_CS, pull_enable: disable}
+  - {pin_num: '6', peripheral: GPIOE, signal: 'GPIO, 5', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0, identifier: WINC_RESET, direction: OUTPUT, pull_select: down,
+    pull_enable: enable}
+  - {pin_num: '7', peripheral: GPIOE, signal: 'GPIO, 6', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT, identifier: WINC_IRQ, direction: INPUT,
+    gpio_interrupt: kPORT_InterruptFallingEdge, pull_select: up, pull_enable: enable}
+  - {pin_num: '14', peripheral: ADC0, signal: 'SE, 1', pin_signal: ADC0_DP1}
+  - {pin_num: '15', peripheral: ADC0, signal: 'SE, 20', pin_signal: ADC0_DM1}
+  - {pin_num: '16', peripheral: ADC1, signal: 'SE, 1', pin_signal: ADC1_DP1, identifier: POWER_ANODE}
+  - {pin_num: '19', peripheral: ADC0, signal: 'SE, 19', pin_signal: ADC0_DM0/ADC1_DM3, identifier: TRIPPED_ANODE}
+  - {pin_num: '20', peripheral: ADC0, signal: 'SE, 3', pin_signal: ADC1_DP0/ADC0_DP3, identifier: NGR_FLT_ANODE}
+  - {pin_num: '21', peripheral: ADC0, signal: 'DM, 3', pin_signal: ADC1_DM0/ADC0_DM3, identifier: GND_FLT_ANODE}
+  - {pin_num: '26', peripheral: ADC1, signal: 'SE, 18', pin_signal: VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18}
+  - {pin_num: '27', peripheral: ADC0, signal: 'SE, 23', pin_signal: DAC0_OUT/CMP1_IN3/ADC0_SE23, identifier: ADC_3V3}
+  - {pin_num: '33', peripheral: ENET, signal: CLKIN_1588, pin_signal: PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN, identifier: ''}
+  - {pin_num: '42', peripheral: ENET, signal: RMII_RXD1, pin_signal: CMP2_IN0/PTA12/CAN0_TX/FTM1_CH0/RMII0_RXD1/MII0_RXD1/I2C2_SCL/I2S0_TXD0/FTM1_QD_PHA, identifier: ''}
+  - {pin_num: '43', peripheral: ENET, signal: RMII_RXD0, pin_signal: CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2C2_SDA/I2S0_TX_FS/FTM1_QD_PHB,
+    identifier: ''}
+  - {pin_num: '44', peripheral: ENET, signal: RMII_CRS_DV, pin_signal: PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2C2_SCL/I2S0_RX_BCLK/I2S0_TXD1, identifier: ''}
+  - {pin_num: '45', peripheral: ENET, signal: RMII_TXEN, pin_signal: PTA15/SPI0_SCK/UART0_RX/RMII0_TXEN/MII0_TXEN/I2S0_RXD0, identifier: ''}
+  - {pin_num: '46', peripheral: ENET, signal: RMII_TXD0, pin_signal: PTA16/SPI0_SOUT/UART0_CTS_b/UART0_COL_b/RMII0_TXD0/MII0_TXD0/I2S0_RX_FS/I2S0_RXD1, identifier: ''}
+  - {pin_num: '47', peripheral: ENET, signal: RMII_TXD1, pin_signal: ADC1_SE17/PTA17/SPI0_SIN/UART0_RTS_b/RMII0_TXD1/MII0_TXD1/I2S0_MCLK, identifier: ''}
+  - {pin_num: '53', peripheral: ENET, signal: RMII_MDIO, pin_signal: ADC0_SE8/ADC1_SE8/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/RMII0_MDIO/MII0_MDIO/FTM1_QD_PHA, identifier: ''}
+  - {pin_num: '54', peripheral: ENET, signal: RMII_MDC, pin_signal: ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/RMII0_MDC/MII0_MDC/FTM1_QD_PHB, identifier: ''}
+  - {pin_num: '66', peripheral: SPI2, signal: PCS0_SS, pin_signal: PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT, identifier: EXTF_CS}
+  - {pin_num: '67', peripheral: SPI2, signal: SCK, pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, identifier: EXTF_SCK}
+  - {pin_num: '68', peripheral: SPI2, signal: SOUT, pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, identifier: EXTF_MOSI}
+  - {pin_num: '69', peripheral: SPI2, signal: SIN, pin_signal: PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28}
+  - {pin_num: '70', peripheral: GPIOC, signal: 'GPIO, 0', pin_signal: ADC0_SE14/PTC0/SPI0_PCS4/PDB0_EXTRG/USB_SOF_OUT/FB_AD14/I2S0_TXD1, direction: OUTPUT, drive_strength: high}
+  - {pin_num: '71', peripheral: GPIOC, signal: 'GPIO, 1', pin_signal: ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0, direction: OUTPUT,
+    drive_strength: high}
+  - {pin_num: '72', peripheral: GPIOC, signal: 'GPIO, 2', pin_signal: ADC0_SE4b/CMP1_IN0/PTC2/SPI0_PCS2/UART1_CTS_b/FTM0_CH1/FB_AD12/I2S0_TX_FS, direction: OUTPUT,
+    drive_strength: high}
+  - {pin_num: '76', peripheral: GPIOC, signal: 'GPIO, 4', pin_signal: PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT, direction: OUTPUT, drive_strength: high}
+  - {pin_num: '80', peripheral: GPIOC, signal: 'GPIO, 8', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7, direction: INPUT, pull_select: up, pull_enable: enable,
+    passive_filter: enable}
+  - {pin_num: '81', peripheral: GPIOC, signal: 'GPIO, 9', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, direction: INPUT, pull_select: up,
+    pull_enable: enable, passive_filter: enable}
+  - {pin_num: '82', peripheral: GPIOC, signal: 'GPIO, 10', pin_signal: ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5, direction: INPUT, pull_select: up, pull_enable: enable,
+    passive_filter: enable}
+  - {pin_num: '90', peripheral: UART3, signal: RX, pin_signal: PTC16/UART3_RX/ENET0_1588_TMR0/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b, identifier: HMI_RS485_RX}
+  - {pin_num: '91', peripheral: UART3, signal: TX, pin_signal: PTC17/UART3_TX/ENET0_1588_TMR1/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b, identifier: HMI_RS485_TX}
+  - {pin_num: '92', peripheral: GPIOC, signal: 'GPIO, 18', pin_signal: PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_BLS23_16_b, identifier: HMI_RS485_DIR,
+    direction: OUTPUT, drive_strength: high}
+  - {pin_num: '95', peripheral: UART2, signal: RX, pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL, identifier: SENSOR_RS485_RX}
+  - {pin_num: '96', peripheral: UART2, signal: TX, pin_signal: PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA, identifier: SENSOR_RS485_TX}
+  - {pin_num: '93', peripheral: GPIOD, signal: 'GPIO, 0', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b, direction: OUTPUT, drive_strength: high}
+  - {pin_num: '97', peripheral: GPIOD, signal: 'GPIO, 4', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN/SPI1_PCS0, identifier: POWER_LED,
+    direction: OUTPUT, drive_strength: high}
+  - {pin_num: '98', peripheral: GPIOD, signal: 'GPIO, 5', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK, identifier: WIFI_LED,
+    direction: OUTPUT, drive_strength: high}
+  - {pin_num: '99', peripheral: GPIOD, signal: 'GPIO, 6', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT, identifier: SENSOR_LED,
+    direction: OUTPUT, drive_strength: high}
+  - {pin_num: '78', peripheral: GPIOC, signal: 'GPIO, 6', pin_signal: CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK, identifier: NGR_FLT_LED,
+    direction: OUTPUT}
+  - {pin_num: '79', peripheral: GPIOC, signal: 'GPIO, 7', pin_signal: CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8, identifier: GND_FLT_LED, direction: OUTPUT}
+  - {pin_num: '77', peripheral: GPIOC, signal: 'GPIO, 5', pin_signal: PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT/FTM0_CH2, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -156,24 +216,401 @@ void BOARD_InitPins(void)
 {
     /* Port A Clock Gate Control: Clock enabled */
     CLOCK_EnableClock(kCLOCK_PortA);
+    /* Port B Clock Gate Control: Clock enabled */
+    CLOCK_EnableClock(kCLOCK_PortB);
+    /* Port C Clock Gate Control: Clock enabled */
+    CLOCK_EnableClock(kCLOCK_PortC);
+    /* Port D Clock Gate Control: Clock enabled */
+    CLOCK_EnableClock(kCLOCK_PortD);
+    /* Port E Clock Gate Control: Clock enabled */
+    CLOCK_EnableClock(kCLOCK_PortE);
 
-    /* PORTA2 (pin 36) is configured as TRACE_SWO */
-    PORT_SetPinMux(PORTA, 2U, kPORT_MuxAlt7);
+    gpio_pin_config_t RELAY_TRIP_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC0 (pin 70)  */
+    GPIO_PinInit(BOARD_RELAY_TRIP_GPIO, BOARD_RELAY_TRIP_PIN, &RELAY_TRIP_config);
 
-    PORTA->PCR[2] = ((PORTA->PCR[2] &
+    gpio_pin_config_t RELAY_NGR_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC1 (pin 71)  */
+    GPIO_PinInit(BOARD_RELAY_NGR_GPIO, BOARD_RELAY_NGR_PIN, &RELAY_NGR_config);
+
+    gpio_pin_config_t RELAY_AUX_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC2 (pin 72)  */
+    GPIO_PinInit(BOARD_RELAY_AUX_GPIO, BOARD_RELAY_AUX_PIN, &RELAY_AUX_config);
+
+    gpio_pin_config_t RELAY_GND_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC4 (pin 76)  */
+    GPIO_PinInit(BOARD_RELAY_GND_GPIO, BOARD_RELAY_GND_PIN, &RELAY_GND_config);
+
+    gpio_pin_config_t TRIPPED_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC5 (pin 77)  */
+    GPIO_PinInit(BOARD_TRIPPED_LED_GPIO, BOARD_TRIPPED_LED_PIN, &TRIPPED_LED_config);
+
+    gpio_pin_config_t NGR_FLT_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC6 (pin 78)  */
+    GPIO_PinInit(BOARD_NGR_FLT_LED_GPIO, BOARD_NGR_FLT_LED_PIN, &NGR_FLT_LED_config);
+
+    gpio_pin_config_t GND_FLT_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC7 (pin 79)  */
+    GPIO_PinInit(BOARD_GND_FLT_LED_GPIO, BOARD_GND_FLT_LED_PIN, &GND_FLT_LED_config);
+
+    gpio_pin_config_t WIFI_ENABLE_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC8 (pin 80)  */
+    GPIO_PinInit(BOARD_WIFI_ENABLE_GPIO, BOARD_WIFI_ENABLE_PIN, &WIFI_ENABLE_config);
+
+    gpio_pin_config_t TEST_P_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC9 (pin 81)  */
+    GPIO_PinInit(BOARD_TEST_P_GPIO, BOARD_TEST_P_PIN, &TEST_P_config);
+
+    gpio_pin_config_t RESET_P_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC10 (pin 82)  */
+    GPIO_PinInit(BOARD_RESET_P_GPIO, BOARD_RESET_P_PIN, &RESET_P_config);
+
+    gpio_pin_config_t HMI_RS485_DIR_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC18 (pin 92)  */
+    GPIO_PinInit(BOARD_HMI_RS485_DIR_GPIO, BOARD_HMI_RS485_DIR_PIN, &HMI_RS485_DIR_config);
+
+    gpio_pin_config_t SENSOR_RS485_DIR_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTD0 (pin 93)  */
+    GPIO_PinInit(BOARD_SENSOR_RS485_DIR_GPIO, BOARD_SENSOR_RS485_DIR_PIN, &SENSOR_RS485_DIR_config);
+
+    gpio_pin_config_t POWER_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTD4 (pin 97)  */
+    GPIO_PinInit(BOARD_POWER_LED_GPIO, BOARD_POWER_LED_PIN, &POWER_LED_config);
+
+    gpio_pin_config_t WIFI_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTD5 (pin 98)  */
+    GPIO_PinInit(BOARD_WIFI_LED_GPIO, BOARD_WIFI_LED_PIN, &WIFI_LED_config);
+
+    gpio_pin_config_t SENSOR_LED_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTD6 (pin 99)  */
+    GPIO_PinInit(BOARD_SENSOR_LED_GPIO, BOARD_SENSOR_LED_PIN, &SENSOR_LED_config);
+
+    gpio_pin_config_t WINC_CHIPEN_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTE0 (pin 1)  */
+    GPIO_PinInit(BOARD_WINC_CHIPEN_GPIO, BOARD_WINC_CHIPEN_PIN, &WINC_CHIPEN_config);
+
+    gpio_pin_config_t WINC_RESET_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTE5 (pin 6)  */
+    GPIO_PinInit(BOARD_WINC_RESET_GPIO, BOARD_WINC_RESET_PIN, &WINC_RESET_config);
+
+    gpio_pin_config_t WINC_IRQ_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTE6 (pin 7)  */
+    GPIO_PinInit(BOARD_WINC_IRQ_GPIO, BOARD_WINC_IRQ_PIN, &WINC_IRQ_config);
+
+    /* PORTA12 (pin 42) is configured as RMII0_RXD1 */
+    PORT_SetPinMux(PORTA, 12U, kPORT_MuxAlt4);
+
+    /* PORTA13 (pin 43) is configured as RMII0_RXD0 */
+    PORT_SetPinMux(PORTA, 13U, kPORT_MuxAlt4);
+
+    /* PORTA14 (pin 44) is configured as RMII0_CRS_DV */
+    PORT_SetPinMux(PORTA, 14U, kPORT_MuxAlt4);
+
+    /* PORTA15 (pin 45) is configured as RMII0_TXEN */
+    PORT_SetPinMux(PORTA, 15U, kPORT_MuxAlt4);
+
+    /* PORTA16 (pin 46) is configured as RMII0_TXD0 */
+    PORT_SetPinMux(PORTA, 16U, kPORT_MuxAlt4);
+
+    /* PORTA17 (pin 47) is configured as RMII0_TXD1 */
+    PORT_SetPinMux(PORTA, 17U, kPORT_MuxAlt4);
+
+    /* PORTB0 (pin 53) is configured as RMII0_MDIO */
+    PORT_SetPinMux(PORTB, 0U, kPORT_MuxAlt4);
+
+    /* PORTB1 (pin 54) is configured as RMII0_MDC */
+    PORT_SetPinMux(PORTB, 1U, kPORT_MuxAlt4);
+
+    /* PORTB20 (pin 66) is configured as SPI2_PCS0 */
+    PORT_SetPinMux(BOARD_EXTF_CS_PORT, BOARD_EXTF_CS_PIN, kPORT_MuxAlt2);
+
+    /* PORTB21 (pin 67) is configured as SPI2_SCK */
+    PORT_SetPinMux(BOARD_EXTF_SCK_PORT, BOARD_EXTF_SCK_PIN, kPORT_MuxAlt2);
+
+    /* PORTB22 (pin 68) is configured as SPI2_SOUT */
+    PORT_SetPinMux(BOARD_EXTF_MOSI_PORT, BOARD_EXTF_MOSI_PIN, kPORT_MuxAlt2);
+
+    /* PORTB23 (pin 69) is configured as SPI2_SIN */
+    PORT_SetPinMux(BOARD_EXTF_MISO_PORT, BOARD_EXTF_MISO_PIN, kPORT_MuxAlt2);
+
+    /* PORTC0 (pin 70) is configured as PTC0 */
+    PORT_SetPinMux(BOARD_RELAY_TRIP_PORT, BOARD_RELAY_TRIP_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[0] = ((PORTC->PCR[0] &
                       /* Mask bits to zero which are setting */
-                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTC1 (pin 71) is configured as PTC1 */
+    PORT_SetPinMux(BOARD_RELAY_NGR_PORT, BOARD_RELAY_NGR_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[1] = ((PORTC->PCR[1] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTC10 (pin 82) is configured as PTC10 */
+    PORT_SetPinMux(BOARD_RESET_P_PORT, BOARD_RESET_P_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[10] = ((PORTC->PCR[10] &
+                       /* Mask bits to zero which are setting */
+                       (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_PFE_MASK | PORT_PCR_ISF_MASK)))
+
+                      /* Pull Select: Internal pullup resistor is enabled on the corresponding pin, if the
+                       * corresponding PE field is set. */
+                      | (uint32_t)(kPORT_PullUp)
+
+                      /* Passive Filter Enable: Passive input filter is enabled on the corresponding pin, if the
+                       * pin is configured as a digital input.
+                       * Refer to the device data sheet for filter characteristics. */
+                      | PORT_PCR_PFE(kPORT_PassiveFilterEnable));
+
+    /* PORTC16 (pin 90) is configured as UART3_RX */
+    PORT_SetPinMux(BOARD_HMI_RS485_RX_PORT, BOARD_HMI_RS485_RX_PIN, kPORT_MuxAlt3);
+
+    /* PORTC17 (pin 91) is configured as UART3_TX */
+    PORT_SetPinMux(BOARD_HMI_RS485_TX_PORT, BOARD_HMI_RS485_TX_PIN, kPORT_MuxAlt3);
+
+    /* PORTC18 (pin 92) is configured as PTC18 */
+    PORT_SetPinMux(BOARD_HMI_RS485_DIR_PORT, BOARD_HMI_RS485_DIR_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[18] = ((PORTC->PCR[18] &
+                       /* Mask bits to zero which are setting */
+                       (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                      /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if
+                       * pin is configured as a digital output. */
+                      | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTC2 (pin 72) is configured as PTC2 */
+    PORT_SetPinMux(BOARD_RELAY_AUX_PORT, BOARD_RELAY_AUX_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[2] = ((PORTC->PCR[2] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTC4 (pin 76) is configured as PTC4 */
+    PORT_SetPinMux(BOARD_RELAY_GND_PORT, BOARD_RELAY_GND_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[4] = ((PORTC->PCR[4] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTC5 (pin 77) is configured as PTC5 */
+    PORT_SetPinMux(BOARD_TRIPPED_LED_PORT, BOARD_TRIPPED_LED_PIN, kPORT_MuxAsGpio);
+
+    /* PORTC6 (pin 78) is configured as PTC6 */
+    PORT_SetPinMux(BOARD_NGR_FLT_LED_PORT, BOARD_NGR_FLT_LED_PIN, kPORT_MuxAsGpio);
+
+    /* PORTC7 (pin 79) is configured as PTC7 */
+    PORT_SetPinMux(BOARD_GND_FLT_LED_PORT, BOARD_GND_FLT_LED_PIN, kPORT_MuxAsGpio);
+
+    /* PORTC8 (pin 80) is configured as PTC8 */
+    PORT_SetPinMux(BOARD_WIFI_ENABLE_PORT, BOARD_WIFI_ENABLE_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[8] = ((PORTC->PCR[8] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_PFE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Pull Select: Internal pullup resistor is enabled on the corresponding pin, if the
+                      * corresponding PE field is set. */
+                     | (uint32_t)(kPORT_PullUp)
+
+                     /* Passive Filter Enable: Passive input filter is enabled on the corresponding pin, if the
+                      * pin is configured as a digital input.
+                      * Refer to the device data sheet for filter characteristics. */
+                     | PORT_PCR_PFE(kPORT_PassiveFilterEnable));
+
+    /* PORTC9 (pin 81) is configured as PTC9 */
+    PORT_SetPinMux(BOARD_TEST_P_PORT, BOARD_TEST_P_PIN, kPORT_MuxAsGpio);
+
+    PORTC->PCR[9] = ((PORTC->PCR[9] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_PFE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Pull Select: Internal pullup resistor is enabled on the corresponding pin, if the
+                      * corresponding PE field is set. */
+                     | (uint32_t)(kPORT_PullUp)
+
+                     /* Passive Filter Enable: Passive input filter is enabled on the corresponding pin, if the
+                      * pin is configured as a digital input.
+                      * Refer to the device data sheet for filter characteristics. */
+                     | PORT_PCR_PFE(kPORT_PassiveFilterEnable));
+
+    /* PORTD0 (pin 93) is configured as PTD0 */
+    PORT_SetPinMux(BOARD_SENSOR_RS485_DIR_PORT, BOARD_SENSOR_RS485_DIR_PIN, kPORT_MuxAsGpio);
+
+    PORTD->PCR[0] = ((PORTD->PCR[0] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTD2 (pin 95) is configured as UART2_RX */
+    PORT_SetPinMux(BOARD_SENSOR_RS485_RX_PORT, BOARD_SENSOR_RS485_RX_PIN, kPORT_MuxAlt3);
+
+    /* PORTD3 (pin 96) is configured as UART2_TX */
+    PORT_SetPinMux(BOARD_SENSOR_RS485_TX_PORT, BOARD_SENSOR_RS485_TX_PIN, kPORT_MuxAlt3);
+
+    /* PORTD4 (pin 97) is configured as PTD4 */
+    PORT_SetPinMux(BOARD_POWER_LED_PORT, BOARD_POWER_LED_PIN, kPORT_MuxAsGpio);
+
+    PORTD->PCR[4] = ((PORTD->PCR[4] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTD5 (pin 98) is configured as PTD5 */
+    PORT_SetPinMux(BOARD_WIFI_LED_PORT, BOARD_WIFI_LED_PIN, kPORT_MuxAsGpio);
+
+    PORTD->PCR[5] = ((PORTD->PCR[5] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTD6 (pin 99) is configured as PTD6 */
+    PORT_SetPinMux(BOARD_SENSOR_LED_PORT, BOARD_SENSOR_LED_PIN, kPORT_MuxAsGpio);
+
+    PORTD->PCR[6] = ((PORTD->PCR[6] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Drive Strength Enable: High drive strength is configured on the corresponding pin, if pin
+                      * is configured as a digital output. */
+                     | PORT_PCR_DSE(kPORT_HighDriveStrength));
+
+    /* PORTE0 (pin 1) is configured as PTE0 */
+    PORT_SetPinMux(BOARD_WINC_CHIPEN_PORT, BOARD_WINC_CHIPEN_PIN, kPORT_MuxAsGpio);
+
+    PORTE->PCR[0] = ((PORTE->PCR[0] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Pull Enable: Internal pullup or pulldown resistor is enabled on the corresponding pin. */
+                     | (uint32_t)(PORT_PCR_PE_MASK));
+
+    /* PORTE1 (pin 2) is configured as SPI1_SOUT */
+    PORT_SetPinMux(BOARD_WINC_MOSI_PORT, BOARD_WINC_MOSI_PIN, kPORT_MuxAlt2);
+
+    /* PORTE2 (pin 3) is configured as SPI1_SCK */
+    PORT_SetPinMux(BOARD_WINC_SCK_PORT, BOARD_WINC_SCK_PIN, kPORT_MuxAlt2);
+
+    /* PORTE26 (pin 33) is configured as ENET_1588_CLKIN */
+    PORT_SetPinMux(PORTE, 26U, kPORT_MuxAlt2);
+
+    /* PORTE3 (pin 4) is configured as SPI1_SIN */
+    PORT_SetPinMux(BOARD_WINC_MISO_PORT, BOARD_WINC_MISO_PIN, kPORT_MuxAlt2);
+
+    /* PORTE4 (pin 5) is configured as SPI1_PCS0 */
+    PORT_SetPinMux(BOARD_WINC_CS_PORT, BOARD_WINC_CS_PIN, kPORT_MuxAlt2);
+
+    PORTE->PCR[4] = ((PORTE->PCR[4] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Pull Enable: Internal pullup or pulldown resistor is not enabled on the corresponding pin. */
+                     | PORT_PCR_PE(kPORT_PullDisable));
+
+    /* PORTE5 (pin 6) is configured as PTE5 */
+    PORT_SetPinMux(BOARD_WINC_RESET_PORT, BOARD_WINC_RESET_PIN, kPORT_MuxAsGpio);
+
+    PORTE->PCR[5] = ((PORTE->PCR[5] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_ISF_MASK)))
 
                      /* Pull Select: Internal pulldown resistor is enabled on the corresponding pin, if the
                       * corresponding PE field is set. */
-                     | PORT_PCR_PS(kPORT_PullDown)
+                     | (uint32_t)(kPORT_PullDown));
 
-                     /* Pull Enable: Internal pullup or pulldown resistor is not enabled on the corresponding pin. */
-                     | PORT_PCR_PE(kPORT_PullDisable)
+    /* PORTE6 (pin 7) is configured as PTE6 */
+    PORT_SetPinMux(BOARD_WINC_IRQ_PORT, BOARD_WINC_IRQ_PIN, kPORT_MuxAsGpio);
 
-                     /* Drive Strength Enable: Low drive strength is configured on the corresponding pin, if pin
-                      * is configured as a digital output. */
-                     | PORT_PCR_DSE(kPORT_LowDriveStrength));
+    /* Interrupt configuration on PORTE6 (pin 7): Interrupt on falling edge */
+    PORT_SetPinInterruptConfig(BOARD_WINC_IRQ_PORT, BOARD_WINC_IRQ_PIN, kPORT_InterruptFallingEdge);
+
+    PORTE->PCR[6] = ((PORTE->PCR[6] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_ISF_MASK)))
+
+                     /* Pull Select: Internal pullup resistor is enabled on the corresponding pin, if the
+                      * corresponding PE field is set. */
+                     | (uint32_t)(kPORT_PullUp));
 }
 
 /* clang-format off */
@@ -265,10 +702,10 @@ void BOARD_InitButtonsPins(void)
 BOARD_InitLEDsPins:
 - options: {prefix: BOARD_, coreID: core0, enableClock: 'true'}
 - pin_list:
-  - {pin_num: '67', peripheral: GPIOB, signal: 'GPIO, 21', pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, direction: OUTPUT, gpio_init_state: 'true', slew_rate: slow,
-    open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '68', peripheral: GPIOB, signal: 'GPIO, 22', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, direction: OUTPUT, gpio_init_state: 'true', slew_rate: slow,
-    open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
+  - {pin_num: '67', peripheral: GPIOB, signal: 'GPIO, 21', pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, identifier: LED_BLUE, direction: OUTPUT, gpio_init_state: 'true',
+    slew_rate: slow, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
+  - {pin_num: '68', peripheral: GPIOB, signal: 'GPIO, 22', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, identifier: LED_RED, direction: OUTPUT, gpio_init_state: 'true',
+    slew_rate: slow, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
   - {pin_num: '33', peripheral: GPIOE, signal: 'GPIO, 26', pin_signal: PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN, direction: OUTPUT, gpio_init_state: 'true',
     slew_rate: slow, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
@@ -798,20 +1235,20 @@ void BOARD_InitENETPins(void)
 BOARD_InitSDHCPins:
 - options: {prefix: BOARD_, coreID: core0, enableClock: 'true'}
 - pin_list:
-  - {pin_num: '1', peripheral: SDHC, signal: 'DATA, 1', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT, slew_rate: fast,
+  - {pin_num: '1', peripheral: SDHC, signal: 'DATA, 1', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT, identifier: SDHC0_D1,
+    slew_rate: fast, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
+  - {pin_num: '2', peripheral: SDHC, signal: 'DATA, 0', pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN, identifier: SDHC0_D0,
+    slew_rate: fast, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
+  - {pin_num: '3', peripheral: SDHC, signal: DCLK, pin_signal: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2, identifier: SDHC0_DCLK, slew_rate: fast,
     open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '2', peripheral: SDHC, signal: 'DATA, 0', pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN, slew_rate: fast,
+  - {pin_num: '4', peripheral: SDHC, signal: CMD, pin_signal: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT, identifier: SDHC0_CMD, slew_rate: fast,
     open_drain: disable, drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '3', peripheral: SDHC, signal: DCLK, pin_signal: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2, slew_rate: fast, open_drain: disable,
+  - {pin_num: '5', peripheral: SDHC, signal: 'DATA, 3', pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0, identifier: SDHC0_D3, slew_rate: fast, open_drain: disable,
     drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '4', peripheral: SDHC, signal: CMD, pin_signal: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT, slew_rate: fast, open_drain: disable,
+  - {pin_num: '6', peripheral: SDHC, signal: 'DATA, 2', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0, identifier: SDHC0_D2, slew_rate: fast, open_drain: disable,
     drive_strength: low, pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '5', peripheral: SDHC, signal: 'DATA, 3', pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0, slew_rate: fast, open_drain: disable, drive_strength: low,
-    pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '6', peripheral: SDHC, signal: 'DATA, 2', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0, slew_rate: fast, open_drain: disable, drive_strength: low,
-    pull_select: down, pull_enable: disable, passive_filter: disable}
-  - {pin_num: '7', peripheral: GPIOE, signal: 'GPIO, 6', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT, direction: INPUT, slew_rate: slow,
-    open_drain: disable, drive_strength: low, pull_select: down, pull_enable: enable, passive_filter: disable}
+  - {pin_num: '7', peripheral: GPIOE, signal: 'GPIO, 6', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT, identifier: SDHC_CD, direction: INPUT,
+    slew_rate: slow, open_drain: disable, drive_strength: low, pull_select: down, pull_enable: enable, passive_filter: disable}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
