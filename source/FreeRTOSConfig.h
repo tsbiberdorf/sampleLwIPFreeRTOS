@@ -80,7 +80,7 @@
 #define configUSE_DAEMON_TASK_STARTUP_HOOK      0
 
 /* Run time and task stats gathering related definitions. */
-#define configGENERATE_RUN_TIME_STATS           0
+#define configGENERATE_RUN_TIME_STATS           1
 #define configUSE_TRACE_FACILITY                1
 #define configUSE_STATS_FORMATTING_FUNCTIONS    0
 
@@ -124,6 +124,14 @@
 /* The lowest interrupt priority that can be used in a call to a "set priority"
 function. */
 #define configLIBRARY_LOWEST_INTERRUPT_PRIORITY ((1U << (configPRIO_BITS)) - 1)
+
+
+extern void RTOS_AppConfigureTimerForRuntimeStats(void);
+extern uint32_t RTOS_GetAppConfigureTimerForRuntimeStats(void);
+
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() RTOS_AppConfigureTimerForRuntimeStats()
+#define portGET_RUN_TIME_COUNTER_VALUE() RTOS_GetAppConfigureTimerForRuntimeStats()
+
 
 /* The highest interrupt priority that can be used by any interrupt service
 routine that makes calls to interrupt safe FreeRTOS API functions.  DO NOT CALL

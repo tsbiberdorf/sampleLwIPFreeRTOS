@@ -32,8 +32,7 @@ uint32_t RTOS_GetAppConfigureTimerForRuntimeStats(void)
 
 
 //	return rtcGetRTCTime();
-//	return rtcGetRunTimeStateTime();
-	return 0;
+	return rtcGetRunTimeStateTime();
 }
 
 /**
